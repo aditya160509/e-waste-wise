@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "fact": "Globally, only about 22 % of electronic waste is formally recycled, significantly below the UN’s target of 50 % by 2030, underscoring a massive opportunity to recover valuable materials and reduce environmental harm.",
+    "icon": "globe"
+  },
+  {
+    "id": 2,
+    "fact": "Recycling just one ton of aluminum saves approximately 14,000 kWh of energy—about 95 % less than producing new aluminum from ore—highlighting the massive energy potential from recovering metal in e-waste.",
+    "icon": "battery-charging"
+  },
+  {
+    "id": 3,
+    "fact": "The average lifecycle carbon footprint of a laptop ranges from 200 to 300 kg CO₂e, with production contributing over 60 % of emissions. Extending device lifespan or recycling significantly helps reduce this burden.",
+    "icon": "laptop"
+  },
+  {
+    "id": 4,
+    "fact": "Purchasing a refurbished laptop rather than a new one can avoid around 254 kg CO₂e in emissions, according to industry analyses, making refurbishing one of the easiest ways to shrink personal digital carbon footprints.",
+    "icon": "refresh-cw"
+  },
+  {
+    "id": 5,
+    "fact": "Thanks to material recovery, recycling aluminum reduces the demand for bauxite ore by up to 8 tons per ton of recycled metal, dramatically easing pressure on mining and environmental degradation.",
+    "icon": "recycle"
+  },
+  {
+    "id": 6,
+    "fact": "India generated approximately 1.9 million tonnes of electronic waste in 2023, making it the third-largest e-waste producer globally and highlighting an urgent need for scalable collection and recycling infrastructure.",
+    "icon": "map-pin"
+  },
+  {
+    "id": 7,
+    "fact": "Over 90 % of electronic waste in India is processed by the informal sector, where recycling is unregulated and hazardous. This creates serious risks of toxin exposure and environmental pollution.",
+    "icon": "alert-triangle"
+  },
+  {
+    "id": 8,
+    "fact": "India’s formal e-waste recycling rate is estimated at just 20 %, far below its generation rate. Vast quantities of end-of-life electronics are still discarded improperly, posing growing health and environmental threats.",
+    "icon": "trash-2"
+  },
+  {
+    "id": 9,
+    "fact": "Brand take-back initiatives launched in India have shown success in responsibly collecting and recycling e-waste. These programs recover valuable materials while reducing hazardous informal practices.",
+    "icon": "package"
+  },
+  {
+    "id": 10,
+    "fact": "Just like globally, recycling electronics in India—especially aluminum-rich items—can save up to 95 % of the energy compared to producing virgin metal. Scaling this can help India’s energy strategy sustainably.",
+    "icon": "zap"
+  }
+]

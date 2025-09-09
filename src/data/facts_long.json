@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "E-Waste Global Crisis",
+    "icon": "Globe",
+    "description": "India generates over 3.2 million tonnes of e-waste annually, making it the third-largest e-waste producer globally. Only 20% is formally recycled, while 80% ends up in landfills or informal recycling, causing severe environmental and health hazards through toxic material leakage."
+  },
+  {
+    "id": 2,
+    "title": "Battery Dangers",
+    "icon": "Zap",
+    "description": "Lithium-ion batteries contain cobalt, nickel, and lithium that can cause soil contamination and groundwater pollution. When improperly disposed, they can explode or catch fire. Proper recycling recovers 95% of these valuable materials for reuse in new batteries."
+  },
+  {
+    "id": 3,
+    "title": "Mobile Phone Impact",
+    "icon": "Smartphone",
+    "description": "A single smartphone contains over 40 chemical elements including gold, silver, and rare earth metals. Mining these materials destroys ecosystems and consumes enormous water resources. Recycling one million phones recovers 24kg of gold, 250kg of silver, and 9000kg of copper."
+  },
+  {
+    "id": 4,
+    "title": "Laptop Lifecycle",
+    "icon": "Laptop",
+    "description": "Manufacturing a laptop generates approximately 400kg of CO2 emissions and requires 190,000 liters of water. Extending its life by just one year reduces environmental impact by 20%. Proper recycling recovers aluminum, plastics, and precious metals worth ₹2000-5000 per device."
+  },
+  {
+    "id": 5,
+    "title": "Toxic Heavy Metals",
+    "icon": "Skull",
+    "description": "E-waste contains lead, mercury, cadmium, and chromium that cause neurological disorders, kidney damage, and cancer. Children in informal recycling communities show higher levels of these toxins in their blood, leading to developmental issues and reduced IQ levels."
+  },
+  {
+    "id": 6,
+    "title": "Circular Economy Benefits",
+    "icon": "Recycle",
+    "description": "Implementing circular economy principles in electronics can reduce raw material consumption by 80% and create 600,000 jobs in India by 2030. For every tonne of e-waste recycled, 1.5 tonnes of CO2 emissions are prevented compared to mining new materials."
+  },
+  {
+    "id": 7,
+    "title": "Informal Sector Risks",
+    "icon": "AlertTriangle",
+    "description": "Over 1.5 million people work in India's informal e-waste sector without safety equipment. They use acid baths, open burning, and manual dismantling that releases dioxins and furans. Formalizing this sector could improve worker safety while increasing recycling efficiency to 70%."
+  },
+  {
+    "id": 8,
+    "title": "Critical Raw Materials",
+    "icon": "Gem",
+    "description": "Electronics contain 17 rare earth elements essential for renewable energy technologies. China controls 90% of rare earth mining, making recycling crucial for supply chain security. One tonne of e-waste contains more gold than 17 tonnes of gold ore mined from earth."
+  },
+  {
+    "id": 9,
+    "title": "Water Contamination",
+    "icon": "Droplets",
+    "description": "Improper e-waste disposal contaminates groundwater with heavy metals that persist for decades. In Delhi's Mundka area, groundwater lead levels are 50 times higher than WHO standards due to informal e-waste processing. This affects 2 million people's drinking water supply."
+  },
+  {
+    "id": 10,
+    "title": "Future Solutions",
+    "icon": "Lightbulb",
+    "description": "Blockchain-based tracking, AI-powered sorting, and urban mining technologies can revolutionize e-waste management. Japan recovered enough gold from old phones for 2020 Olympic medals. India could generate ₹4,500 crores annually from proper e-waste recycling by 2025."
+  }
+]

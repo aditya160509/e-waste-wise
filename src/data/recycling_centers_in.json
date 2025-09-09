@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Eco Friend Industries",
+    "city": "Navi Mumbai",
+    "verified": true,
+    "address": "Plot A-205, TTC Industrial Area, MIDC Pawane, Navi Mumbai, Maharashtra",
+    "phone": "022-27689020",
+    "maps_link": "https://maps.google.com/?q=Eco+Friend+Industries+Navi+Mumbai"
+  },
+  {
+    "name": "Green IT Recycling Centre Pvt. Ltd.",
+    "city": "Pune",
+    "verified": true,
+    "address": "MIDC Ranjangaon, Pune, Maharashtra",
+    "phone": "9822356062",
+    "maps_link": "https://maps.google.com/?q=Green+IT+Recycling+Centre+Pune"
+  },
+  {
+    "name": "Sayma E-Waste Solutions",
+    "city": "Pune",
+    "verified": true,
+    "address": "Urali Devashi, Pune, Maharashtra",
+    "phone": "9922763959",
+    "maps_link": "https://maps.google.com/?q=Sayma+E-Waste+Solutions+Pune"
+  },
+  {
+    "name": "WE – The Recycling Company",
+    "city": "Mumbai",
+    "verified": true,
+    "address": "Borpada, Thane (Mumbai Metro), Maharashtra",
+    "phone": "7718824575",
+    "maps_link": "https://maps.google.com/?q=WE+The+Recycling+Company+Thane"
+  },
+  {
+    "name": "Green India E-Waste & Recycling OPC Pvt. Ltd.",
+    "city": "Thane",
+    "verified": true,
+    "address": "Dahisar, Thane, Maharashtra",
+    "phone": "8080414447",
+    "maps_link": "https://maps.google.com/?q=Green+India+E-Waste+Recycling+Thane"
+  },
+  {
+    "name": "Go Green Recycling",
+    "city": "Navi Mumbai",
+    "verified": true,
+    "address": "Mahape Industrial Area, Navi Mumbai, Maharashtra",
+    "phone": "9892859959",
+    "maps_link": "https://maps.google.com/?q=Go+Green+Recycling+Navi+Mumbai"
+  },
+  {
+    "name": "RecycleKaro",
+    "city": "Mumbai",
+    "verified": true,
+    "address": "Mumbai, Maharashtra",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=RecycleKaro+Mumbai"
+  },
+  {
+    "name": "E-Parisaraa Pvt. Ltd.",
+    "city": "Bengaluru",
+    "verified": true,
+    "address": "Plot No. 30-P3, Dobbespet, Karnataka Industrial Area, Bengaluru Rural, Karnataka",
+    "phone": "+91-99801-47680",
+    "maps_link": "https://maps.google.com/?q=E-Parisaraa+Dobbespet+Bengaluru"
+  },
+  {
+    "name": "Cerebra Integrated Technologies",
+    "city": "Bengaluru",
+    "verified": true,
+    "address": "Kolar Region, Bengaluru, Karnataka",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=Cerebra+Integrated+Technologies+Bengaluru"
+  },
+  {
+    "name": "Recykal Regional Hub",
+    "city": "Hyderabad",
+    "verified": true,
+    "address": "Hyderabad, Telangana",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=Recykal+Hyderabad"
+  },
+  {
+    "name": "SKV E-Waste Recycling Pvt. Ltd.",
+    "city": "Chennai",
+    "verified": true,
+    "address": "Ambattur Industrial Estate, Chennai, Tamil Nadu",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=SKV+E-Waste+Recycling+Chennai"
+  },
+  {
+    "name": "Hulladek Recycling Pvt. Ltd.",
+    "city": "Kolkata",
+    "verified": true,
+    "address": "Kolkata, West Bengal",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=Hulladek+Recycling+Kolkata"
+  },
+  {
+    "name": "Greentek Reman Pvt. Ltd.",
+    "city": "Greater Noida",
+    "verified": true,
+    "address": "Greater Noida, Uttar Pradesh",
+    "phone": "1800-121-1788",
+    "maps_link": "https://maps.google.com/?q=Greentek+Reman+Greater+Noida"
+  },
+  {
+    "name": "E-Waste Recyclers India",
+    "city": "Mathura",
+    "verified": true,
+    "address": "Industrial Area, Kosi Kotwan, Mathura, Uttar Pradesh",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=E-Waste+Recyclers+India+Mathura"
+  },
+  {
+    "name": "3R Recycler Pvt. Ltd.",
+    "city": "Gurugram",
+    "verified": true,
+    "address": "Sector-8, IMT Manesar, Gurugram, Haryana",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=3R+Recycler+Manesar"
+  },
+  {
+    "name": "APICEM Recyclers Pvt. Ltd.",
+    "city": "Gurugram",
+    "verified": true,
+    "address": "Sector-6, IMT Manesar, Gurugram, Haryana",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=APICEM+Recyclers+Manesar"
+  },
+  {
+    "name": "Surya Roshni Ltd (Recycler)",
+    "city": "Bhopal",
+    "verified": true,
+    "address": "Bhopal, Madhya Pradesh",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=Surya+Roshni+Recycler+Bhopal"
+  },
+  {
+    "name": "Green Leaf Recycling Industries",
+    "city": "Jaipur",
+    "verified": true,
+    "address": "Bagru Extension Industrial Area, Jaipur, Rajasthan",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=Green+Leaf+Recycling+Bagru+Jaipur"
+  },
+  {
+    "name": "Green Zone Recycling (P) Ltd.",
+    "city": "Sikandrabad",
+    "verified": true,
+    "address": "UPSIDC Industrial Area, Sikandrabad, Bulandshahr, Uttar Pradesh",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=Green+Zone+Recycling+Sikandrabad"
+  },
+  {
+    "name": "Waste PRO Recycling",
+    "city": "Hapur",
+    "verified": true,
+    "address": "Udayrampur, Nangla, Dhaulana, Hapur, Uttar Pradesh",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=Waste+PRO+Recycling+Hapur"
+  },
+  {
+    "name": "Sun E-Waste Recycling Company",
+    "city": "Kosi Kalan (near Mathura)",
+    "verified": true,
+    "address": "MG Road Industrial Area, Hapur Road, Kosi Kalan, Mathura, Uttar Pradesh",
+    "phone": null,
+    "maps_link": "https://maps.google.com/?q=Sun+E-Waste+Recycling+Kosi+Kalan"
+  }
+]
