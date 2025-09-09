@@ -4,8 +4,6 @@ A modern, education-first web app that helps people **understand e-waste**, **es
 
 Built with **React + TypeScript + Vite**, **Tailwind/shadcn UI**, **Framer Motion**, and optional **OpenAI** back-end helpers. Maps use Google Places/Maps.
 
-> **License:** MIT (see `LICENSE`)
-
 ---
 
 ## ✨ Core Features
@@ -221,6 +219,6 @@ Issues and PRs are welcome. Please:
 
 ---
 
-## 📄 License
+## 📝 License
 
-This project is licensed under the **MIT License**. See `LICENSE` for details.
+MIT — see [`LICENSE`](./LICENSE).
