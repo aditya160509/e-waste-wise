@@ -1,73 +1,226 @@
-# Welcome to your Lovable project
+# E-Waste Wise India
 
-## Project info
+A modern, education-first web app that helps people **understand e-waste**, **estimate environmental impact**, and **find verified recycling centers across India**.
 
-**URL**: https://lovable.dev/projects/94d8fa53-09f5-4323-89f1-c1c51fc1f220
+Built with **React + TypeScript + Vite**, **Tailwind/shadcn UI**, **Framer Motion**, and optional **OpenAI** back-end helpers. Maps use Google Places/Maps.
 
-## How can I edit this code?
+> **License:** MIT (see `LICENSE`)
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## ✨ Core Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/94d8fa53-09f5-4323-89f1-c1c51fc1f220) and start prompting.
+* **Impact Demo**
 
-Changes made via Lovable will be committed automatically to this repo.
+  * Device dropdown with pretty labels (e.g., “Laptop / Desktop”, “Mobile / Tablet”, …)
+  * **Animated** stats (count-up) for CO₂, water, energy, metals, recycling rate, lifecycle CO₂
+  * Hazards, impact note, and **disposal guidance**
+  * Subtle confetti on first result (respects “reduced motion”)
+  * Recent classifications (localStorage, de-duped)
 
-**Use your preferred IDE**
+* **Recycling Centers**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+  * Curated list of verified centers (India)
+  * Search + city filter; **pagination** (10 per page)
+  * Clean **vertical cards**: Name → City/Verified → Phone → “View Map”
+  * “View Map” embeds **Places search** (no hardcoded map links)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* **Education**
 
-Follow these steps:
+  * Four themed sections rendered as **colorful flashcards**
+  * Bottom-right **“Did you know?”** floating button opens a **manual** Next/Previous facts panel (no auto-rotation)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* **Design System**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+  * HSL/brand tokens, soft glass surfaces, gradient accents
+  * shadcn/ui components with Tailwind utilities
+  * Dark/Light theme with system preference
+  * Accessible by default (focus rings, ARIA labels, keyboard navigation)
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## 🧱 Tech Stack
+
+* **Frontend:** React 18, TypeScript, Vite
+* **UI:** Tailwind CSS, shadcn/ui (Radix under the hood), Lucide icons
+* **Animation:** Framer Motion (reduced-motion support)
+* **Data & State:** JSON content, React hooks, localStorage
+* **Maps:** Google Maps **Places** (text query)
+* **(Optional) AI:** OpenAI Responses API via small Express server for:
+
+  * Free-text device **classification** into supported labels
+  * “**Explain this impact**” markdown summary
+  * **Grounded chat** (SSE streaming) over local JSON context
+
+---
+
+## 📁 Project Structure (high-level)
+
+```
+e-waste-wise-india/
+├─ src/
+│  ├─ components/
+│  │  ├─ Demo.tsx
+│  │  ├─ ImpactCard.tsx
+│  │  ├─ CenterCard.tsx
+│  │  ├─ CenterMap.tsx
+│  │  ├─ DidYouKnowFab.tsx
+│  │  ├─ DidYouKnowPanel.tsx
+│  │  └─ ui/ (Section, Surface, GradientText, etc.)
+│  ├─ pages/
+│  │  ├─ Index.tsx            # Home
+│  │  ├─ Education.tsx
+│  │  └─ RecyclingCenters.tsx
+│  ├─ data/
+│  │  ├─ impact_factors.json
+│  │  ├─ recycling_centers_in.json
+│  │  └─ facts.json
+│  ├─ lib/ (a11y, motion, helpers)
+│  └─ index.css
+├─ server/ (optional OpenAI gateway)
+│  └─ index.ts
+├─ public/
+├─ LICENSE                    # MIT
+└─ README.md
+```
+
+---
+
+## 🔧 Getting Started
+
+### Prerequisites
+
+* **Node.js ≥ 18** and **npm** (or pnpm/yarn)
+* **Google Maps Places API key** with Maps Embed/Places Search enabled
+* *(Optional)* **OpenAI API key** if you enable the AI server
+
+### 1) Install
+
+```bash
+npm install
+```
+
+### 2) Environment
+
+Create `.env` at the project root:
+
+```dotenv
+# Frontend
+VITE_GOOGLE_MAPS_API_KEY=YOUR_GOOGLE_PLACES_API_KEY
+
+# Optional OpenAI server (do NOT prefix with VITE_)
+OPENAI_API_KEY=sk-...
+OPENAI_MODEL_CHAT=gpt-4o
+OPENAI_MODEL_CLASSIFY=gpt-4o-mini
+```
+
+> Keep `OPENAI_API_KEY` **server-only**. Never commit `.env`.
+
+### 3A) Run (Frontend only)
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open [http://localhost:5173](http://localhost:5173)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### 3B) Run with AI server (optional)
 
-**Use GitHub Codespaces**
+```bash
+npm run dev:server   # starts Express
+npm run dev          # runs server + Vite together if configured with concurrently
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### 4) Build
 
-## What technologies are used for this project?
+```bash
+npm run build
+```
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📊 Data Files (JSON)
 
-## How can I deploy this project?
+* **`impact_factors.json`** — array of device categories with full metrics:
 
-Simply open [Lovable](https://lovable.dev/projects/94d8fa53-09f5-4323-89f1-c1c51fc1f220) and click on Share -> Publish.
+  * `label`, `co2_kg`, `water_liters`, `energy_kwh`, `metals{...}`, `monetary_value_usd`, `global_recycling_rate_pct`, `lifecycle_co2_kg`, `hazards[]`, `note`, `disposal_guidance`
+* **`recycling_centers_in.json`** — array of centers:
 
-## Can I connect a custom domain to my Lovable project?
+  * `name`, `city`, `verified`, `address`, `phone`, `maps_link` *(not used directly; we query Places by text)*
+* **`facts.json`** — array of `{ id, fact, icon }` used in Education + FAB panel
 
-Yes, you can!
+> Updating these files updates the site content without code changes.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🗺️ Maps Behavior
+
+* The app **never** opens hardcoded map URLs.
+* “View Map” triggers an embedded map using **Places text query**:
+
+  ```
+  `${name}, ${address}, ${city}, India`
+  ```
+* Make sure your key allows the relevant Maps/Places APIs and your domain is whitelisted.
+
+---
+
+## 🤖 Optional AI Integration
+
+If the optional server is enabled:
+
+* **POST `/api/ai/classify`** — classify free-text device into an allowed `label`
+* **POST `/api/ai/explain-impact`** — markdown explanation grounded in `impact_factors.json`
+* **POST `/api/ai/ask`** — **SSE** chat over context: impact + subset of centers + facts
+
+All responses are **grounded**; if context is missing, the server replies “I don’t know” and suggests using the Centers page. The API key is not exposed to the browser.
+
+---
+
+## ♿ Accessibility
+
+* Keyboard focus is visible everywhere (brand focus ring)
+* Components use ARIA labels and semantic markup
+* Respects user **prefers-reduced-motion**
+* Color contrast tuned for readability in light/dark themes
+
+---
+
+## 🚀 Performance
+
+* Vite + React fast refresh
+* Tree-shaken shadcn/ui imports
+* Lazy maps, minimal re-renders, memoized lists
+* Lightweight JSON content pipeline
+
+---
+
+## 🧪 Quality
+
+* TypeScript for safety
+* Recommended: enable ESLint + Prettier in your editor
+* Conventional Commits for clean history
+
+---
+
+## 🛠️ Troubleshooting
+
+* **Map not showing**: check `VITE_GOOGLE_MAPS_API_KEY`, billing status, and referer/domain restrictions.
+* **No animation**: device stat animation respects reduced-motion; verify OS/browser setting.
+* **AI requests blocked**: ensure the Express server is running and CORS allows `http://localhost:5173`.
+
+---
+
+## 🙌 Contributing
+
+Issues and PRs are welcome. Please:
+
+* Keep UI consistent with the design tokens
+* Favor accessible components and semantic HTML
+* Include screenshots for UI changes
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See `LICENSE` for details.
